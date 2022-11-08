@@ -6,22 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Memory game</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/icon.png" type="image/x-icon">
 </head>
 <body>
-    <h1>Memory game</h1>
-    <div id="a">
-        <span id="span-blue1"></span>
-        <span id="span-red1"></span>
-    </div>
-    <div id="b">
-        <span id="span-green1"></span>
-        <span id="span-blue2"></span>
-    </div>
-    <div id="c">
-        <span id="span-green2"></span>
-        <span id="span-red2"></span>
-    </div>
-    <footer>Author: Caio Gonzaga</footer>
+
+    <main>
+        <h1>Memory game</h1>
+        <div id="a">
+            <div id="span-0"></div>
+            <div id="span-1"></div>
+        </div>
+        <div id="b">
+            <div id="span-2"></div>
+            <div id="span-3"></div>
+        </div>
+        <div id="c">
+            <div id="span-4"></div>
+            <div id="span-5"></div>
+        </div>
+        <footer>Author: Caio Gonzaga</footer>
+        <button onclick="window.location.reload()">Play Again</button>
+    </main>
 
     <script src="main.js"></script>
 
