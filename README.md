@@ -1,7 +1,7 @@
 <h1 align="center"> Memory Game </h1>
 
 <p align="center">
-A simple development of a memory game
+A simple development of a memory game.
 </p>
 
 <p align="center">
@@ -27,7 +27,6 @@ This project was developed with the following technologies:
 
 - HTML and CSS
 - JavaScript
-- Figma
 - Git and Github
 
 ## 💻 Project
