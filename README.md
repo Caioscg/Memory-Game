@@ -31,8 +31,8 @@ This project was developed with the following technologies:
 
 ## 💻 Project
 
-With this website you can play a random memory game.
-If you find any bug, or want to improve the project, tell me!
+- With this website you can play a random memory game.
+- If you find any bug, or want to improve the project, tell me!
 
 ## 🌐 Site
 
