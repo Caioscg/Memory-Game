@@ -21,7 +21,7 @@ A simple development of a memory game.
   <img src="./.github/preview.jpg" alt="" width="100%">
 </p>
 
-## 💻 Technologies
+## 🛠️ Technologies
 
 This project was developed with the following technologies:
 
