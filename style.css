@@ -11,6 +11,7 @@ h1 {
     font-family: 'Roboto', sans-serif;
     color: #B2B2B2;
     margin: 10px;
+    text-align: center;
 }
 main {
     display: flex;
@@ -60,6 +61,7 @@ footer p {
     font-family: 'Roboto', sans-serif;
     color: #B2B2B2;
     margin-right: 10px;
+    text-align: center;
 }
 
 @keyframes rotate-diagonal-1 {
