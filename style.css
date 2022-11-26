@@ -1,26 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
     background-color: #393E46;
 }
 h1 {
     font-size: 68px;
-    text-align: center;
     font-family: 'Roboto', sans-serif;
     color: #B2B2B2;
+    margin: 10px;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px
 }
 #a, #b, #c{
     display: flex;
     height: 25vh;
     width: 45vw;
-    margin: 1px 0 0.8rem 27.7%;
 }
-#span-0, #span-1, #span-2, #span-3, #span-4, #span-5{
+#a {
+    margin-top: 20px;
+}
+#span-0, #span-1, #span-2, #span-3, #span-4, #span-5,
+#span-6, #span-7, #span-8, #span-9, #span-10, #span-11{
     flex-grow: 1;
     border: double black 10px;
     margin-right: 0.8rem;
     background-color: rgb(104, 64, 36);
     animation: rotate-diagonal-2 0.4s linear both;
     cursor: pointer;
-    border-radius: 15px;
+    border-radius: 20px;
 }
 button {
     width: 200px;
@@ -28,6 +43,7 @@ button {
     font-size: 30px;
     position: absolute;
     bottom: 5px;
+    left: 5px;
     background-color: rgb(20, 20, 20);
     color: #393E46;
     font-family: 'Roboto', sans-serif;
@@ -38,8 +54,9 @@ footer{
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
     color: #B2B2B2;
-    position: absolute;
+    position: fixed;
     right: 10px;
+    bottom: 10px;
 }
 
 @keyframes rotate-diagonal-1 {
