@@ -9,8 +9,8 @@ let spanGreen1
 let spanGreen2
 let spanRed1
 let spanRed2
+let breakTime = 0
 randomSquares()
-
 // victory message
 const victory = document.createElement('div')
 victory.innerText = "You win!"
@@ -19,7 +19,7 @@ victory.style.width = "800px"
 victory.style.height = "200px"
 victory.style.textAlign = "center"
 victory.style.border = "3px solid white"
-victory.style.borderRadius = "10%"
+victory.style.borderRadius = "20px"
 victory.style.position = "absolute"
 victory.style.top = "50%"
 victory.style.left = "50%"
@@ -31,17 +31,25 @@ victory.style.color = "#393E46"
 
 // all functions
 function Blue1() {
+    if (breakTime>1) return
+    if (b === 1 && breakTime === 1) return
+    if (b === 2) return
+    breakTime++;
+
+    spanBlue1.style.animation= "rotate-diagonal-1 0.4s linear both"
     spanBlue1.style.backgroundColor = "#0E5E6F";
     b++;
     if (b === 1) {
         if (g === 1) {
-            setTimeout(Brown, 300)
+            setTimeout(Brown, 800)
+            return
         }
         else if (r === 1) {
-            setTimeout(Brown, 300)
+            setTimeout(Brown, 800)
+            return
         }
     }
-    if (b >= 2 && g >= 2 && r >= 2) {
+    else if (b >= 2 && g >= 2 && r >= 2) {
         body.append(victory)
         victory.style.visibility = "visible"
         body.append(playAgain)
@@ -49,17 +57,25 @@ function Blue1() {
     }
 }
 function Blue2() {
+    if (breakTime>1) return
+    if (b === 1 && breakTime === 1) return
+    if (b === 2) return
+    breakTime++;
+
+    spanBlue2.style.animation= "rotate-diagonal-1 0.4s linear both"
     spanBlue2.style.backgroundColor = "#0E5E6F";
     b++;
     if (b === 1) {
         if (g === 1) {
-            setTimeout(Brown, 300)
+            setTimeout(Brown, 800)
+            return
         }
         else if (r === 1) {
-            setTimeout(Brown, 300)
+            setTimeout(Brown, 800)
+            return
         }
     }
-    if (b >= 2 && g >= 2 && r >= 2) {
+    else if (b >= 2 && g >= 2 && r >= 2) {
         body.append(victory)
         victory.style.visibility = "visible"
         body.append(playAgain)
@@ -67,17 +83,25 @@ function Blue2() {
     }
 }
 function Green1() {
+    if (breakTime>1) return
+    if (g === 1 && breakTime === 1) return
+    if (g === 2) return
+    breakTime++;
+
+    spanGreen1.style.animation= "rotate-diagonal-1 0.4s linear both"
     spanGreen1.style.backgroundColor = "#54B435"
     g++;
     if (g === 1) {
         if (b === 1) {
-            setTimeout(Brown, 300)
+            setTimeout(Brown, 800)
+            return
         }
         else if (r === 1) {
-            setTimeout(Brown, 300)
+            setTimeout(Brown, 800)
+            return
         }
     }
-    if (b >= 2 && g >= 2 && r >= 2) {
+    else if (b >= 2 && g >= 2 && r >= 2) {
         body.append(victory)
         victory.style.visibility = "visible"
         body.append(playAgain)
@@ -85,17 +109,25 @@ function Green1() {
     }
 }
 function Green2() {
+    if (breakTime>1) return
+    if (g === 1 && breakTime === 1) return
+    if (g === 2) return
+    breakTime++;
+
+    spanGreen2.style.animation= "rotate-diagonal-1 0.4s linear both"
     spanGreen2.style.backgroundColor = "#54B435"
     g++;
     if (g === 1) {
         if (b === 1) {
-            setTimeout(Brown, 300)
+            setTimeout(Brown, 800)
+            return
         }
         else if (r === 1) {
-            setTimeout(Brown, 300)
+            setTimeout(Brown, 800)
+            return
         }
     }
-    if (b >= 2 && g >= 2 && r >= 2) {
+    else if (b >= 2 && g >= 2 && r >= 2) {
         body.append(victory)
         victory.style.visibility = "visible"
         body.append(playAgain)
@@ -103,17 +135,25 @@ function Green2() {
     }
 }
 function Red1() {
+    if (breakTime>1) return
+    if (r === 1 && breakTime === 1) return
+    if (r === 2) return
+    breakTime++;
+
+    spanRed1.style.animation= "rotate-diagonal-1 0.4s linear both"
     spanRed1.style.backgroundColor = "#B73E3E"
     r++;
     if (r === 1) {
         if (g === 1) {
-            setTimeout(Brown, 300)
+            setTimeout(Brown, 800)
+            return
         }
         else if (b === 1) {
-            setTimeout(Brown, 300)
+            setTimeout(Brown, 800)
+            return
         }
     }
-    if (b >= 2 && g >= 2 && r >= 2) {
+    else if (b >= 2 && g >= 2 && r >= 2) {
         body.append(victory)
         victory.style.visibility = "visible"
         body.append(playAgain)
@@ -121,17 +161,25 @@ function Red1() {
     }
 }
 function Red2() {
+    if (breakTime>1) return
+    if (r === 1 && breakTime === 1) return
+    if (r === 2) return
+    breakTime++;
+
+    spanRed2.style.animation= "rotate-diagonal-1 0.4s linear both"
     spanRed2.style.backgroundColor = "#B73E3E"
     r++;
     if (r === 1) {
         if (g === 1) {
-            setTimeout(Brown, 300)
+            setTimeout(Brown, 800)
+            return
         }
         else if (b === 1) {
-            setTimeout(Brown, 300)
+            setTimeout(Brown, 800)
+            return
         }
     }
-    if (b >= 2 && g >= 2 && r >= 2) {
+    else if (b >= 2 && g >= 2 && r >= 2) {
         body.append(victory)
         victory.style.visibility = "visible"
         body.append(playAgain)
@@ -140,26 +188,36 @@ function Red2() {
 }
 function Brown() {
     if (b < 2) {
+        spanBlue1.style.animation= "rotate-diagonal-2 0.4s linear both";
         spanBlue1.style.backgroundColor = "rgb(104, 64, 36)"
         spanBlue1.style.border = "double black 10px"
+
+        spanBlue2.style.animation= "rotate-diagonal-2 0.4s linear both";
         spanBlue2.style.backgroundColor = "rgb(104, 64, 36)"
         spanBlue2.style.border = "double black 10px"
         b = 0
     }
     if (g < 2) {
+        spanGreen1.style.animation= "rotate-diagonal-2 0.4s linear both";
         spanGreen1.style.backgroundColor = "rgb(104, 64, 36)"
         spanGreen1.style.border = "double black 10px"
+
+        spanGreen2.style.animation= "rotate-diagonal-2 0.4s linear both";
         spanGreen2.style.backgroundColor = "rgb(104, 64, 36)"
         spanGreen2.style.border = "double black 10px"
         g = 0
     }
     if (r < 2) {
+        spanRed1.style.animation= "rotate-diagonal-2 0.4s linear both";
         spanRed1.style.backgroundColor = "rgb(104, 64, 36)"
         spanRed1.style.border = "double black 10px"
+
+        spanRed2.style.animation= "rotate-diagonal-2 0.4s linear both";
         spanRed2.style.backgroundColor = "rgb(104, 64, 36)"
         spanRed2.style.border = "double black 10px"
         r = 0
     }
+    breakTime = 0
 }
 function getRandom() {
     random = Math.floor(Math.random() * 6)

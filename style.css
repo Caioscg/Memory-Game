@@ -18,6 +18,9 @@ h1 {
     border: double black 10px;
     margin-right: 0.8rem;
     background-color: rgb(104, 64, 36);
+    animation: rotate-diagonal-2 0.4s linear both;
+    cursor: pointer;
+    border-radius: 15px;
 }
 button {
     width: 200px;
@@ -38,3 +41,36 @@ footer{
     position: absolute;
     right: 10px;
 }
+
+@keyframes rotate-diagonal-1 {
+    0% {
+        -webkit-transform: rotate3d(1, 1, 0, 0deg);
+        transform: rotate3d(1, 1, 0, 0deg);
+    }
+    50% {
+        -webkit-transform: rotate3d(1, 1, 0, -180deg);
+        transform: rotate3d(1, 1, 0, -180deg);
+    }
+    100% {
+        -webkit-transform: rotate3d(1, 1, 0, -360deg);
+        transform: rotate3d(1, 1, 0, -360deg);
+    }
+}
+
+@keyframes rotate-diagonal-2 {
+    0% {
+        -webkit-transform: rotate3d(-1, 1, 0, 0deg);
+        transform: rotate3d(-1, 1, 0, 0deg);
+    }
+    50% {
+        -webkit-transform: rotate3d(-1, 1, 0, 180deg);
+        transform: rotate3d(-1, 1, 0, 180deg);
+    }
+    100% {
+        -webkit-transform: rotate3d(-1, 1, 0, 360deg);
+        transform: rotate3d(-1, 1, 0, 360deg);
+    }
+}
+  
+
+  
