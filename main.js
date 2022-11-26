@@ -54,6 +54,8 @@ victory.style.backgroundColor = "rgb(20, 20, 20)"
 victory.style.color = "#393E46"
 // play again button
 
+// count of plays
+const plays = document.querySelector("#count")
 
 // all functions
 function Blue1() {
@@ -62,7 +64,10 @@ function Blue1() {
     if (breakTime>1) return
     if (b === 2) return
     breakTime++;
+
     count++
+    if (count % 2 === 0) plays.textContent = `Count of plays: ${count/2}`
+
     spanBlue1.style.animation= "rotate-diagonal-1 0.4s linear both"
     spanBlue1.style.backgroundColor = "#0E5E6F"
     b++;
@@ -89,10 +94,12 @@ function Blue1() {
         }
     }
     else if (b >= 2 && g >= 2 && r >= 2 && y >= 2 && w >= 2 && p >= 2) {
-        body.append(victory)
-        victory.style.visibility = "visible"
-        body.append(playAgain)
-        playAgain.style.visibility = "visible"
+        setTimeout(() => {
+            body.append(victory)
+            victory.style.visibility = "visible"
+            body.append(playAgain)
+            playAgain.style.visibility = "visible"
+        }, 300)
     }
     setTimeout (() => {
         breakTime = 0
@@ -105,7 +112,10 @@ function Blue2() {
     if (breakTime>1) return
     if (b === 2) return
     breakTime++;
+
     count++
+    if (count % 2 === 0) plays.textContent = `Count of plays: ${count/2}`
+
     spanBlue2.style.animation= "rotate-diagonal-1 0.4s linear both"
     spanBlue2.style.backgroundColor = "#0E5E6F"
     b++;
@@ -132,10 +142,12 @@ function Blue2() {
         }
     }
     else if (b >= 2 && g >= 2 && r >= 2 && y >= 2 && w >= 2 && p >= 2) {
-        body.append(victory)
-        victory.style.visibility = "visible"
-        body.append(playAgain)
-        playAgain.style.visibility = "visible"
+        setTimeout(() => {
+            body.append(victory)
+            victory.style.visibility = "visible"
+            body.append(playAgain)
+            playAgain.style.visibility = "visible"
+        }, 300)
     }
     setTimeout (() => {
         breakTime = 0
@@ -148,7 +160,10 @@ function Green1() {
     if (breakTime>1) return
     if (g === 2) return
     breakTime++;
+
     count++
+    if (count % 2 === 0) plays.textContent = `Count of plays: ${count/2}`
+
     spanGreen1.style.animation= "rotate-diagonal-1 0.4s linear both"
     spanGreen1.style.backgroundColor = "#54B435"
     g++;
@@ -175,10 +190,12 @@ function Green1() {
         }
     }
     else if (b >= 2 && g >= 2 && r >= 2 && y >= 2 && w >= 2 && p >= 2) {
-        body.append(victory)
-        victory.style.visibility = "visible"
-        body.append(playAgain)
-        playAgain.style.visibility = "visible"
+        setTimeout(() => {
+            body.append(victory)
+            victory.style.visibility = "visible"
+            body.append(playAgain)
+            playAgain.style.visibility = "visible"
+        }, 300)
     }
     setTimeout (() => {
         breakTime = 0
@@ -191,7 +208,10 @@ function Green2() {
     if (breakTime>1) return
     if (g === 2) return
     breakTime++;
+
     count++
+    if (count % 2 === 0) plays.textContent = `Count of plays: ${count/2}`
+
     spanGreen2.style.animation= "rotate-diagonal-1 0.4s linear both"
     spanGreen2.style.backgroundColor = "#54B435"
     g++;
@@ -218,10 +238,12 @@ function Green2() {
         }
     }
     else if (b >= 2 && g >= 2 && r >= 2 && y >= 2 && w >= 2 && p >= 2) {
-        body.append(victory)
-        victory.style.visibility = "visible"
-        body.append(playAgain)
-        playAgain.style.visibility = "visible"
+        setTimeout(() => {
+            body.append(victory)
+            victory.style.visibility = "visible"
+            body.append(playAgain)
+            playAgain.style.visibility = "visible"
+        }, 300)
     }
     setTimeout (() => {
         breakTime = 0
@@ -234,7 +256,10 @@ function Red1() {
     if (breakTime>1) return
     if (r === 2) return
     breakTime++;
+
     count++
+    if (count % 2 === 0) plays.textContent = `Count of plays: ${count/2}`
+
     spanRed1.style.animation= "rotate-diagonal-1 0.4s linear both"
     spanRed1.style.backgroundColor = "#B73E3E"
     r++;
@@ -261,10 +286,12 @@ function Red1() {
         }
     }
     else if (b >= 2 && g >= 2 && r >= 2 && y >= 2 && w >= 2 && p >= 2) {
-        body.append(victory)
-        victory.style.visibility = "visible"
-        body.append(playAgain)
-        playAgain.style.visibility = "visible"
+        setTimeout(() => {
+            body.append(victory)
+            victory.style.visibility = "visible"
+            body.append(playAgain)
+            playAgain.style.visibility = "visible"
+        }, 300)
     }
     setTimeout (() => {
         breakTime = 0
@@ -277,7 +304,10 @@ function Red2() {
     if (breakTime>1) return
     if (r === 2) return
     breakTime++;
+
     count++
+    if (count % 2 === 0) plays.textContent = `Count of plays: ${count/2}`
+
     spanRed2.style.animation= "rotate-diagonal-1 0.4s linear both"
     spanRed2.style.backgroundColor = "#B73E3E"
     r++;
@@ -304,10 +334,12 @@ function Red2() {
         }
     }
     else if (b >= 2 && g >= 2 && r >= 2 && y >= 2 && w >= 2 && p >= 2) {
-        body.append(victory)
-        victory.style.visibility = "visible"
-        body.append(playAgain)
-        playAgain.style.visibility = "visible"
+        setTimeout(() => {
+            body.append(victory)
+            victory.style.visibility = "visible"
+            body.append(playAgain)
+            playAgain.style.visibility = "visible"
+        }, 300)
     }
     setTimeout (() => {
         breakTime = 0
@@ -320,7 +352,10 @@ function Yellow1() {
     if (breakTime>1) return
     if (y === 2) return
     breakTime++;
+
     count++
+    if (count % 2 === 0) plays.textContent = `Count of plays: ${count/2}`
+
     spanYellow1.style.animation= "rotate-diagonal-1 0.4s linear both"
     spanYellow1.style.backgroundColor = "#beab21"
     y++;
@@ -347,10 +382,12 @@ function Yellow1() {
         }
     }
     else if (b >= 2 && g >= 2 && r >= 2 && y >= 2 && w >= 2 && p >= 2) {
-        body.append(victory)
-        victory.style.visibility = "visible"
-        body.append(playAgain)
-        playAgain.style.visibility = "visible"
+        setTimeout(() => {
+            body.append(victory)
+            victory.style.visibility = "visible"
+            body.append(playAgain)
+            playAgain.style.visibility = "visible"
+        }, 300)
     }
     setTimeout (() => {
         breakTime = 0
@@ -363,7 +400,10 @@ function Yellow2() {
     if (breakTime>1) return
     if (y === 2) return
     breakTime++;
+
     count++
+    if (count % 2 === 0) plays.textContent = `Count of plays: ${count/2}`
+
     spanYellow2.style.animation= "rotate-diagonal-1 0.4s linear both"
     spanYellow2.style.backgroundColor = "#beab21"
     y++;
@@ -390,10 +430,12 @@ function Yellow2() {
         }
     }
     else if (b >= 2 && g >= 2 && r >= 2 && y >= 2 && w >= 2 && p >= 2) {
-        body.append(victory)
-        victory.style.visibility = "visible"
-        body.append(playAgain)
-        playAgain.style.visibility = "visible"
+        setTimeout(() => {
+            body.append(victory)
+            victory.style.visibility = "visible"
+            body.append(playAgain)
+            playAgain.style.visibility = "visible"
+        }, 300)
     }
     setTimeout (() => {
         breakTime = 0
@@ -406,7 +448,10 @@ function White1() {
     if (breakTime>1) return
     if (w === 2) return
     breakTime++;
+
     count++
+    if (count % 2 === 0) plays.textContent = `Count of plays: ${count/2}`
+
     spanWhite1.style.animation= "rotate-diagonal-1 0.4s linear both"
     spanWhite1.style.backgroundColor = "#ddd8b3"
     w++;
@@ -433,10 +478,12 @@ function White1() {
         }
     }
     else if (b >= 2 && g >= 2 && r >= 2 && y >= 2 && w >= 2 && p >= 2) {
-        body.append(victory)
-        victory.style.visibility = "visible"
-        body.append(playAgain)
-        playAgain.style.visibility = "visible"
+        setTimeout(() => {
+            body.append(victory)
+            victory.style.visibility = "visible"
+            body.append(playAgain)
+            playAgain.style.visibility = "visible"
+        }, 300)
     }
     setTimeout (() => {
         breakTime = 0
@@ -449,7 +496,11 @@ function White2() {
     if (breakTime>1) return
     if (w === 2) return
     breakTime++;
-    count++
+
+    count++;
+    if (count % 2 === 0) plays.textContent = `Count of plays: ${count/2}`
+
+    
     spanWhite2.style.animation= "rotate-diagonal-1 0.4s linear both"
     spanWhite2.style.backgroundColor = "#ddd8b3"
     w++;
@@ -476,10 +527,12 @@ function White2() {
         }
     }
     else if (b >= 2 && g >= 2 && r >= 2 && y >= 2 && w >= 2 && p >= 2) {
-        body.append(victory)
-        victory.style.visibility = "visible"
-        body.append(playAgain)
-        playAgain.style.visibility = "visible"
+        setTimeout(() => {
+            body.append(victory)
+            victory.style.visibility = "visible"
+            body.append(playAgain)
+            playAgain.style.visibility = "visible"
+        }, 300)
     }
     setTimeout (() => {
         breakTime = 0
@@ -492,7 +545,10 @@ function Preto1() {
     if (breakTime>1) return
     if (p === 2) return
     breakTime++;
+
     count++
+    if (count % 2 === 0) plays.textContent = `Count of plays: ${count/2}`
+
     spanPreto1.style.animation= "rotate-diagonal-1 .4s linear both"
     spanPreto1.style.backgroundColor = "#30302c"
     p++;
@@ -519,10 +575,12 @@ function Preto1() {
         }
     }
     else if (b >= 2 && g >= 2 && r >= 2 && y >= 2 && w >= 2 && p >= 2) {
-        body.append(victory)
-        victory.style.visibility = "visible"
-        body.append(playAgain)
-        playAgain.style.visibility = "visible"
+        setTimeout(() => {
+            body.append(victory)
+            victory.style.visibility = "visible"
+            body.append(playAgain)
+            playAgain.style.visibility = "visible"
+        }, 300)
     }
     setTimeout (() => {
         breakTime = 0
@@ -535,7 +593,10 @@ function Preto2() {
     if (breakTime>1) return
     if (p === 2) return
     breakTime++;
+
     count++
+    if (count % 2 === 0) plays.textContent = `Count of plays: ${count/2}`
+
     spanPreto2.style.animation= "rotate-diagonal-1 .4s linear both"
     spanPreto2.style.backgroundColor = "#30302c"
     p++;
@@ -562,10 +623,12 @@ function Preto2() {
         }
     }
     else if (b >= 2 && g >= 2 && r >= 2 && y >= 2 && w >= 2 && p >= 2) {
-        body.append(victory)
-        victory.style.visibility = "visible"
-        body.append(playAgain)
-        playAgain.style.visibility = "visible"
+        setTimeout(() => {
+            body.append(victory)
+            victory.style.visibility = "visible"
+            body.append(playAgain)
+            playAgain.style.visibility = "visible"
+        }, 300)
     }
     setTimeout (() => {
         breakTime = 0

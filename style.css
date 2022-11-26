@@ -21,7 +21,7 @@ main {
 }
 #a, #b, #c{
     display: flex;
-    height: 25vh;
+    height: 24vh;
     width: 45vw;
 }
 #a {
@@ -37,26 +37,29 @@ main {
     cursor: pointer;
     border-radius: 20px;
 }
-button {
+footer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer button {
     width: 200px;
     height: 100px;
     font-size: 30px;
-    position: absolute;
-    bottom: 5px;
-    left: 5px;
     background-color: rgb(20, 20, 20);
     color: #393E46;
     font-family: 'Roboto', sans-serif;
     border: 1px solid white;
     border-radius: 50%;
 }
-footer{
+
+footer p {
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
     color: #B2B2B2;
-    position: fixed;
-    right: 10px;
-    bottom: 10px;
+    margin-right: 10px;
 }
 
 @keyframes rotate-diagonal-1 {
