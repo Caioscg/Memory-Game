@@ -18,7 +18,7 @@ A simple development of a memory game.
 <br>
 
 <p align="center">
-  <img src="./.github/preview.jpg" alt="" width="100%">
+  <img src="./.github/preview.jfif" alt="" width="100%">
 </p>
 
 ## 🛠️ Technologies

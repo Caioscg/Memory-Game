@@ -1,3 +1,4 @@
+//TODO: arrumar quando clica em + de 2 da mesma vez
 // all boxes
 let b = 0
 let g = 0
